@@ -3,14 +3,16 @@ package Principal;
 import PrincipalEjercicios.CuentaCorriente;
 import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
+import PrincipalEjercicios.ProductoPerecedero;
 
 public class Main {
 
 	public static void main(String[]args) {
 		ejercicioUno();
 		ejercicio2();
+		ejercicio3();
 	}
-	
+	//ejercicio1
 	public static void ejercicioUno() {
 		
 		Docente docente = new Docente("Luis",35,"Matematica");
@@ -22,7 +24,7 @@ public class Main {
 		System.out.println("Estudiante");
 		estudiante.mostrar();
 	}
-	
+	//ejercicio2
 	public static void ejercicio2() {
 	
 		CuentaCorriente c =  new CuentaCorriente(500,200);
@@ -31,6 +33,14 @@ public class Main {
 		c.retirar(1000);
 		c.depositar(600);
 		c.mostrarSaldo();
+	}
+	//ejercicio3
+	public static void ejercicio3() {
+		
+		ProductoPerecedero producto = new ProductoPerecedero("Arroz", 20, 20260414);
+		
+		
+		System.out.println("Vencimiento:" +  producto.estaVencido());
 	}
 	}
 
