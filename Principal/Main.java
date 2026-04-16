@@ -1,5 +1,6 @@
 package Principal;
 
+import PrincipalEjercicios.CuentaCorriente;
 import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
 
@@ -7,7 +8,7 @@ public class Main {
 
 	public static void main(String[]args) {
 		ejercicioUno();
-		
+		ejercicio2();
 	}
 	
 	public static void ejercicioUno() {
@@ -22,6 +23,15 @@ public class Main {
 		estudiante.mostrar();
 	}
 	
+	public static void ejercicio2() {
+	
+		CuentaCorriente c =  new CuentaCorriente(500,200);
+		
+		
+		c.retirar(1000);
+		c.depositar(600);
+		c.mostrarSaldo();
+	}
 	}
 
 
