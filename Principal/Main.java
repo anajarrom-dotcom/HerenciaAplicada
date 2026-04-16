@@ -6,6 +6,7 @@ import PrincipalEjercicios.CuentaCorriente;
 import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
 import PrincipalEjercicios.Gerente;
+import PrincipalEjercicios.LibroDigital;
 import PrincipalEjercicios.Moto;
 import PrincipalEjercicios.ProductoPerecedero;
 import PrincipalEjercicios.Rectangulo;
@@ -22,6 +23,7 @@ public class Main {
 		ejercicio6();
 		ejercicio7();
 		ejercicio8();
+		ejercicio9();
 	}
 	//ejercicio1
 	public static void ejercicioUno() {
@@ -88,6 +90,13 @@ public class Main {
 			
 			System.out.println("Area rectangulo: " + rec.calcularArea());
 			System.out.println("Area circulo: " + circulo.calcularArea());
+		}
+		//ejercicio9
+		public static void ejercicio9() {
+			
+			LibroDigital digital = new LibroDigital("Dale Carnegio","Dale Carnegio",1000);
+			
+			System.out.println("Libro: " + digital.mostrarInfo());
 		}
 	}
 
