@@ -6,6 +6,7 @@ import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
 import PrincipalEjercicios.Gerente;
 import PrincipalEjercicios.ProductoPerecedero;
+import PrincipalEjercicios.Perro;
 
 public class Main {
 
@@ -15,6 +16,7 @@ public class Main {
 		ejercicio3();
 		ejercicio4();
 		ejercicio5();
+		ejercicio6();
 	}
 	//ejercicio1
 	public static void ejercicioUno() {
@@ -59,6 +61,13 @@ public class Main {
 		
 		System.out.println("Nombre:" + gerente.getNombre());
 		System.out.println("Salario:" + gerente.calcularSalario());
+	
+	}
+	//ejercicio6
+	public static void ejercicio6() {
+		
+		Perro p = new Perro("Charly");
+		p.hacerSonido();
 	}
 	}
 
