@@ -24,6 +24,7 @@ public class Main {
 		ejercicio7();
 		ejercicio8();
 		ejercicio9();
+		ejercicio10();
 	}
 	//ejercicio1
 	public static void ejercicioUno() {
@@ -97,6 +98,10 @@ public class Main {
 			LibroDigital digital = new LibroDigital("Dale Carnegio","Dale Carnegio",1000);
 			
 			System.out.println("Libro: " + digital.mostrarInfo());
+		}
+		//ejercicio10
+		public static void ejercicio10() {
+			System.out.println("------Ejercicio 10------");
 		}
 	}
 
