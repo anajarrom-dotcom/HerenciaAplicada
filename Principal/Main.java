@@ -1,20 +1,41 @@
 package Principal;
 
-import PrincipalEjercicios.CuentaAhorro;
+import PrincipalEjercicios.Docente;
+import PrincipalEjercicios.Estudiante;
 
 public class Main {
 
 	public static void main(String[]args) {
+		ejercicioUno();
 		
-		ejercicioPractico();
 	}
 	
-	public static void ejercicioPractico() {
+	public static void ejercicioUno() {
 		
-		CuentaAhorro cuenta = new CuentaAhorro(1000, 0.05);
+		Docente docente = new Docente("Luis",35,"Matematica");
+		Estudiante estudiante = new Estudiante("Juan", 20 ,32);
 		
-		cuenta.depositar(500);
-		cuenta.retirar(3000);
-		
+		System.out.println("Docente");
+		docente.mostrar();
+		System.out.println("  ");
+		System.out.println("Estudiante");
+		estudiante.mostrar();
 	}
-}
+	
+	}
+
+
+
+
+
+
+
+//	Ejemplo practico
+//import PrincipalEjercicios.CuentaAhorro;
+//public static void ejercicioPractico() {
+	
+	//CuentaAhorro cuenta = new CuentaAhorro(1000, 0.05);
+	
+	//cuenta.depositar(500);
+	//cuenta.retirar(3000);
+	//ejercicioPractico();
