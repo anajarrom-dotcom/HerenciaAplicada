@@ -5,6 +5,7 @@ import PrincipalEjercicios.CuentaCorriente;
 import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
 import PrincipalEjercicios.Gerente;
+import PrincipalEjercicios.Moto;
 import PrincipalEjercicios.ProductoPerecedero;
 import PrincipalEjercicios.Perro;
 
@@ -17,6 +18,7 @@ public class Main {
 		ejercicio4();
 		ejercicio5();
 		ejercicio6();
+		ejercicio7();
 	}
 	//ejercicio1
 	public static void ejercicioUno() {
@@ -68,6 +70,12 @@ public class Main {
 		
 		Perro p = new Perro("Charly");
 		p.hacerSonido();
+	}
+	//ejercicio7
+	public static void ejercicio7() {
+		
+		Moto moto = new Moto("CRF",200,250);
+		System.out.println(moto.mostrarInfo());
 	}
 	}
 
