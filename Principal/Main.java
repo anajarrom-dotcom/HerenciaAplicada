@@ -1,5 +1,6 @@
 package Principal;
 
+import PrincipalEjercicios.Bus;
 import PrincipalEjercicios.CuentaCorriente;
 import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
@@ -11,6 +12,7 @@ public class Main {
 		ejercicioUno();
 		ejercicio2();
 		ejercicio3();
+		ejercicio4();
 	}
 	//ejercicio1
 	public static void ejercicioUno() {
@@ -41,6 +43,12 @@ public class Main {
 		
 		
 		System.out.println("Vencimiento:" +  producto.estaVencido());
+	}
+	//ejercicio4
+	public static void ejercicio4() {
+		
+		Bus bus = new Bus(200, " Inter-Ameria");
+		System.out.println(bus.descripcion());
 	}
 	}
 
