@@ -4,6 +4,7 @@ import PrincipalEjercicios.Bus;
 import PrincipalEjercicios.CuentaCorriente;
 import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
+import PrincipalEjercicios.Gerente;
 import PrincipalEjercicios.ProductoPerecedero;
 
 public class Main {
@@ -13,6 +14,7 @@ public class Main {
 		ejercicio2();
 		ejercicio3();
 		ejercicio4();
+		ejercicio5();
 	}
 	//ejercicio1
 	public static void ejercicioUno() {
@@ -49,6 +51,14 @@ public class Main {
 		
 		Bus bus = new Bus(200, " Inter-Ameria");
 		System.out.println(bus.descripcion());
+	}
+	//ejercicio5
+	public static void ejercicio5() {
+		
+		Gerente gerente = new Gerente("Lucas", 10000,1500);
+		
+		System.out.println("Nombre:" + gerente.getNombre());
+		System.out.println("Salario:" + gerente.calcularSalario());
 	}
 	}
 
