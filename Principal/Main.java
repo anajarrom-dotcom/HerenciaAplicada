@@ -1,12 +1,14 @@
 package Principal;
 
 import PrincipalEjercicios.Bus;
+import PrincipalEjercicios.Circulo;
 import PrincipalEjercicios.CuentaCorriente;
 import PrincipalEjercicios.Docente;
 import PrincipalEjercicios.Estudiante;
 import PrincipalEjercicios.Gerente;
 import PrincipalEjercicios.Moto;
 import PrincipalEjercicios.ProductoPerecedero;
+import PrincipalEjercicios.Rectangulo;
 import PrincipalEjercicios.Perro;
 
 public class Main {
@@ -19,6 +21,7 @@ public class Main {
 		ejercicio5();
 		ejercicio6();
 		ejercicio7();
+		ejercicio8();
 	}
 	//ejercicio1
 	public static void ejercicioUno() {
@@ -77,6 +80,15 @@ public class Main {
 		Moto moto = new Moto("CRF",200,250);
 		System.out.println(moto.mostrarInfo());
 	}
+	//ejercicio8
+		public static void ejercicio8() {
+			
+			Rectangulo rec = new Rectangulo(15,25);
+			Circulo circulo = new Circulo(10);
+			
+			System.out.println("Area rectangulo: " + rec.calcularArea());
+			System.out.println("Area circulo: " + circulo.calcularArea());
+		}
 	}
 
 

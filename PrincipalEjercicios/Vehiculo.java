@@ -13,5 +13,6 @@ public class Vehiculo {
 	public String mostrarInfo() {
 		return "Marca: " + marca + " " + "Velocidad " + velocidad;
 	}
+	
 
 }
